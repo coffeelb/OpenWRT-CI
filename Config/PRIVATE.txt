@@ -1,0 +1,6 @@
+CONFIG_PACKAGE_luci-app-cddns=y
+CONFIG_PACKAGE_luci-app-csing-box=y
+CONFIG_PACKAGE_sing-box=y
+
+# 默认配置启用了 HomeProxy，与 Csing-box 同时运行容易抢占 TUN/路由
+CONFIG_PACKAGE_luci-app-homeproxy=n
