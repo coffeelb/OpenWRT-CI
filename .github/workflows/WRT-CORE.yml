@@ -16,6 +16,12 @@ on:
       WRT_NAME:
         required: true
         type: string
+      WRT_SSID:
+        required: true
+        type: string
+      WRT_WORD:
+        required: true
+        type: string
       WRT_IP:
         required: true
         type: string
