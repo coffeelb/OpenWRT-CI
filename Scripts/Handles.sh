@@ -44,3 +44,10 @@ FIX "mini-diskmanager" "$PACKAGE_PATH/luci-app-mini-diskmanager" sed -i "s/servi
 #修改natmapt菜单位置
 FIX "natmapt" "$PACKAGE_PATH/luci-app-natmapt" sed -i "s/network/services/g" \
 	"$PACKAGE_PATH/luci-app-natmapt/root/usr/share/luci/menu.d/luci-app-natmap.json"
+
+#IPQ60xx 默认调频策略改回 schedutil
+if [[ "$WRT_SUBTARGET" == "ipq60xx" ]]; then
+	FIX "ipq60xx-cpufreq-governor" "$PACKAGE_PATH/kernel/mac80211/files" sed -i \
+		"s/option scaling_governor 'performance'/option scaling_governor 'schedutil'/" \
+		"$PACKAGE_PATH/kernel/mac80211/files/pbuf.uci"
+fi
