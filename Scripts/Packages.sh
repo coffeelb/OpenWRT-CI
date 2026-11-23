@@ -51,7 +51,7 @@ UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "axonhub gecoosac miniupnpd sing-box luci-app-homeproxy luci-app-timewol luci-app-upnp luci-app-wolplus luci-app-wolultra"
 UPDATE_PACKAGE "mihomo-meta" "coffeelb/MimoGate" "main" "pkg"
-UPDATE_PACKAGE "luci-app-mimogate" "coffeelb/MimoGate" "dev" "pkg"
+UPDATE_PACKAGE "luci-app-mimogate" "coffeelb/MimoGate" "main" "pkg"
 UPDATE_PACKAGE "cddns" "coffeelb/luci-app-cddns" "main"
 
 UPDATE_PACKAGE "diskman" "sbwml/luci-app-diskman" "main"
